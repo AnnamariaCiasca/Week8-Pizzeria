@@ -168,3 +168,10 @@ select {
     box-sizing: border-box;
 }
 
+@media screen and (max-width: 660px) {
+    #menuMain {
+        background-image: none;
+    }
+}
+
+
