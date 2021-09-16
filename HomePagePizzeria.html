@@ -1,0 +1,106 @@
+﻿<!--Sito web pizzeria
+
+Tutte le pagine hanno la barra di navigazione LATERALE comune e il footer.
+Passando sui link della nav bar, deve cambiare il colore di sfondo e del font.
+
+Pagine:
+- Home
+Con alcune immagini e informazioni sulla Pizzeria
+
+- Menu
+Deve contenere la lista di pizze (che l'utente può selezionare)
+con nome pizza, ingredienti, prezzo
+Su un lato, inserire un'immagine con posizione fissa
+(ovvero scorrendo la pagina, l'immagine si vede sempre nella stessa posizione)
+
+In fondo, c'è un tasto checkout, che porta alla pagina successiva (Conferma ordine)
+
+- Conferma ordine (accessibile solo tramite il tasto checkout)
+Form con nome, cognome, indirizzo, numero di telefono, metodo di pagamento
+(contanti o carta).
+Tutti i campi sono obbligatori.
+Inserire un tasto per confermare la prenotazione.
+
+- Contatti
+A piacere (con un'immagine laterale)
+
+Altri requisiti:
+Personalizzare la pagina con un foglio di stile esterno.
+
+Aggiunta:
+- quando lo schermo diventa più piccolo di 660px,
+l'immagine nei contatti e nel menu viene nascosta.
+
+Javascript:
+Cliccando checkout, Deve essere calcolato il conto in base alle pizze scelte
+e salvato nello storage.
+Nella pagina di conferma ordine, deve essere visualizzato il conto
+(=> recuperato dallo storage e mostrato) e cliccando
+su metodo di pagamento, compare un campo per inserire il codice della carta.-->
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>HomePage</title>
+    <link rel="stylesheet" href="StyleSheet.css?ts=<?=time()?>&quot">
+</head>
+<body>
+
+    <div class="sidenav">
+        <a href="HomepagePizzeria.html" class="w3-bar-item w3-button">Home</a><br />
+        <a href="MenuPizzeria.html" class="w3-bar-item w3-button">Menu</a><br />
+        <a href="ContattiPizzeria.html" class="w3-bar-item w3-button">Contatti</a>
+    </div>
+
+    <div class="main">
+
+        <header>
+            <div style="border: 0px solid #000">
+                <img id="logo" src="https://d1csarkz8obe9u.cloudfront.net/posterpreviews/pizza-slice-logo-design-template-fbd7d5c4ded4bb1e9996eefa152b3b53_screen.jpg?ts=1577264555" width="100" height="100" style="margin-left: 0px; float: left; " />
+                <h1 style="margin-right:500px; float:right">Pizza Company</h1>
+            </div>
+        </header>
+
+        <center>
+            <br />
+            <br />
+            <div class="slider-container" style="margin-top:100px">
+                <span id="slider-image-1"></span>
+                <span id="slider-image-2"></span>
+                <span id="slider-image-3"></span>
+                <div class="image-container">
+                    <img src="https://www.saporinostri.it/wp-content/uploads/2020/10/le-origini-della-pizza-napoletana-e1601990439881.jpg" width="1000" , height="400" class="slider-image" />
+                    <img src="https://www.unadonna.it/wp-content/uploads/2016/04/iStock_000089429295_Full.jpg" width="1000" height="400" class="slider-image" />
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/c/c8/Pizza_Margherita_stu_spivack.jpg" width="800" height="400" class="slider-image" />
+                </div>
+                <div class="button-container">
+                    <a href="#slider-image-1" class="slider-change"></a>
+                    <a href="#slider-image-2" class="slider-change"></a>
+                    <a href="#slider-image-3" class="slider-change"></a>
+                </div>
+            </div>
+
+            <br />
+            <br />
+
+            <p>
+                La pizza è tra le più grandi tradizioni del nostro Paese e noi la conserviamo intatta.
+                <br />Non cerchiamo equilibri di gusto pretenziosi e complicati, solo ingredienti semplici ma pregiati, perché siamo convinti che la vera innovazione risiede nella tradizione.
+            </p>
+        </center>
+        <br />
+        <br />
+        <br />
+        <footer>
+            <center>
+                <p>
+                    &copy; Copyright 2021 Pizza Company. Tutti i diritti riservati. <br />
+                    <a href="http://www.Facebook.com" target="_blank"> <img width="30" title="Facebook" src="https://upload.wikimedia.org/wikipedia/commons/5/51/Facebook_f_logo_%282019%29.svg" /></a>   &nbsp   <a href="http://www.Instagram.com" target="_blank"> <img width="30" title="Instagram" src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e7/Instagram_logo_2016.svg/1200px-Instagram_logo_2016.svg.png" /></a>
+                </p>
+            </center>
+        </footer>
+        </div>
+
+</body>
+</html>

@@ -1,0 +1,86 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+    <link rel="stylesheet" href="StyleSheet.css?ts=<?=time()?>&quot">
+    <script src="Pizzeria.js"></script>
+</head>
+<body onload="mostraConto()">
+
+    <div class="sidenav">
+        <a href="HomepagePizzeria.html" class="w3-bar-item w3-button">Home</a><br />
+        <a href="MenuPizzeria.html" class="w3-bar-item w3-button">Menu</a><br />
+        <a href="ContattiPizzeria.html" class="w3-bar-item w3-button">Contatti</a>
+    </div>
+
+    <div class="main">
+
+        <header>
+            <div style="border: 0px solid #000">
+                <img id="logo" src="https://d1csarkz8obe9u.cloudfront.net/posterpreviews/pizza-slice-logo-design-template-fbd7d5c4ded4bb1e9996eefa152b3b53_screen.jpg?ts=1577264555" width="100" height="100" style="margin-left: 0px; float: left; " />
+                <h1 style="margin-right:500px; float:right">Pizza Company</h1>
+            </div>
+        </header>
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+
+
+
+        <center> <p id="bill"></p> </center>
+
+        <form id="formOrdine">
+            <label>Nome</label>
+            <input type="text" required />
+            <br /> <br />
+            <label>Cognome</label>
+            <input type="text" required />
+            <br /> <br />
+            <label>Indirizzo</label>
+            <input type="text" required />
+            <br /> <br />
+            <label>Telefono</label>
+            <input type="tel" required />
+            <br /> <br />
+            <label>Pagamento</label>
+            <select>
+                <option name="metodoPagamento" value="1" onchange="inserisciCarta()">Contanti</option>
+                <option name="metodoPagamento" value="2" onchange="inserisciCarta()">Carta</option>
+            </select>        <br /> <br />
+            <div id="codiceCarta" style="display:none">
+                <label>Codice carta</label>
+                <input type="text" required />
+            </div>
+            <br /> <br />
+            <input type="submit" class="button" value="Invia ordine" />
+        </form>
+
+
+
+
+
+
+
+
+
+        <br />
+        <br />
+        <br />
+        <footer>
+            <center>
+                <p>
+                    &copy; Copyright 2021 Pizza Company. Tutti i diritti riservati. <br />
+                    <a href="http://www.Facebook.com" target="_blank"> <img width="30" title="Facebook" src="https://upload.wikimedia.org/wikipedia/commons/5/51/Facebook_f_logo_%282019%29.svg" /></a>   &nbsp   <a href="http://www.Instagram.com" target="_blank"> <img width="30" title="Instagram" src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e7/Instagram_logo_2016.svg/1200px-Instagram_logo_2016.svg.png" /></a>
+                </p>
+            </center>
+        </footer>
+    </div>
+</body>
+</html>
